@@ -1,16 +1,19 @@
 {
   "dependencies": {
-    "ejs-electron": "^2.1.1",
-    "electron": "^17.1.2",
     "electron-store": "^8.0.1"
+  },
+  "devDependencies": {
+    "electron-builder": "^22.14.13",
+    "electron": "^17.1.2"
   },
   "name": "fcstudios-mod-manager",
   "description": "A mod manager for the FC Studios Mods",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",

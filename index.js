@@ -1,6 +1,5 @@
 const electron = require('electron');
 const Store = require('electron-store')
-const ejs = require('ejs-electron')
 
 const store = new Store();
 let width, height
