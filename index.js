@@ -1,5 +1,6 @@
 const electron = require('electron');
-const Store = require('electron-store')
+const Store = require('electron-store');
+const ejs = require('ejs-electron');
 
 const store = new Store();
 let width, height
@@ -26,6 +27,8 @@ electron.app.whenReady().then(() => {
     width = electron.screen.getPrimaryDisplay().workAreaSize.width;
     open_window()
     win.setMenu(null)
+    ejs.data('windowTitle', 'FC Studios Mod Manager ' + require('./package.json').version)
+    win.loadFile('./app/renderer/views/main.ejs')
     electron.app.on('activate', () => {
         if (electron.BrowserWindow.getAllWindows().length === 0) open_window()
     })
