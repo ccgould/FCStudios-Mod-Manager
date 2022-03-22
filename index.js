@@ -12,10 +12,10 @@ const open_window = () => {
             nodeIntegration: true,
             contextIsolation: false
         },
-        minWidth: Math.round(width * 0.5),
-        minHeight: Math.round(height * 0.5),
-        width: Math.round(width * 0.5),
-        height: Math.round(height * 0.5),
+        minWidth: Math.round(width * 0.7),
+        minHeight: Math.round(height * 0.7),
+        width: Math.round(width * 0.7),
+        height: Math.round(height * 0.7),
     })
     win.setBackgroundColor('#333')
 }
