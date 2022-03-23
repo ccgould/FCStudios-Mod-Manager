@@ -17,8 +17,10 @@ const open_window = () => {
         minHeight: Math.round(height * 0.7),
         width: Math.round(width * 0.7),
         height: Math.round(height * 0.7),
+        frame: false
     })
-    win.setBackgroundColor('#333')
+    win.setBackgroundColor('#383B40')
+    win.setOpacity(0.98)
 }
 
 // Runs When Ready
@@ -28,6 +30,8 @@ electron.app.whenReady().then(() => {
     open_window()
     win.setMenu(null)
     ejs.data('windowTitle', 'FC Studios Mod Manager ' + require('./package.json').version)
+    ejs.data('username', 'Not logged in')
+    ejs.data('userpfp', 'http://fcstudioshub.com/wp-content/uploads/2020/09/LOGO_512x512.png')
     win.loadFile('./app/renderer/views/main.ejs')
     electron.app.on('activate', () => {
         if (electron.BrowserWindow.getAllWindows().length === 0) open_window()
