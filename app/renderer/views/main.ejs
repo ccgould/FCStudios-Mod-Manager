@@ -1,6 +1,23 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title><%= windowTitle %></title>
+    <link rel="stylesheet/less" type="text/css" href="../style.less" />
+    <script src="../less.js"></script>
 </head>
 <body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="<%= userpfp %>" alt="Profile Picture">
+            <div class="profile-username"> <%= username %> </div>
+        </div>
+        <div class="sidebar-content">
+            <div class="sidebar-section">Mods
+                <svg
+                <div class="sidebar-option" id="browse">Home</div>
+                <div class="sidebar-option" id="browse">Library</div>
+                <div class="sidebar-option" id="browse"></div>
+                <div class="sidebar-option" id="browse">Browse</div>
+            </div>
+        </div>
+    </div>
 </body>
