@@ -20,7 +20,7 @@ const open_window = () => {
         frame: false
     })
     win.setBackgroundColor('#383B40')
-    win.setOpacity(0.98)
+    win.setOpacity(0.99)
 }
 
 // Runs When Ready
