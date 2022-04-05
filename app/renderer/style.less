@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
+body, html {
+  margin: 0;
+}
+
 .sidebar {
   height: 100%;
   width: 230px;
@@ -88,4 +92,46 @@
   vertical-align: middle;
   padding-left: 10px;
   line-height: 35px;
+}
+
+.main-content {
+  color: white;
+  margin: 8px 8px 8px 240px;
+}
+
+.topbar {
+  display: block;
+  margin-top: 15px;
+  height: 35px;
+  border-radius: 35px;
+  background-color: #2C2B2F;
+  padding-left: 15px;
+}
+
+.topbar i, div {
+  vertical-align: middle;
+  line-height: 35px;
+}
+
+.topbar i {
+  cursor: pointer;
+}
+
+.topbar div {
+  position: absolute;
+  padding-left: 13px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  display: inline;
+}
+
+.game-top {
+  border-radius: 5px;
+}
+
+.image-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
