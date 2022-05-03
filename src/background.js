@@ -19,6 +19,7 @@ async function createWindow() {
     minHeight: Math.round(height * 0.7),
     width: Math.round(width * 0.7),
     height: Math.round(height * 0.7),
+    icon: '../public/icon.ico',
     frame: false,
     webPreferences: {
       nodeIntegration: process.env.ELECTRON_NODE_INTEGRATION,

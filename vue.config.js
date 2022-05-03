@@ -7,6 +7,10 @@ module.exports = defineConfig({
       builderOptions: {
         productName: "FCStudios Mod Manager",
         appId: 'modlauncher.fcstudioshub.com',
+        "mac": {
+          "target": "dmg",
+          "icon": "public/icon.icns"
+        },
         win: {
           "target": [
             "nsis"
