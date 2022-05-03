@@ -5,7 +5,7 @@
       <div class="profile-username"> {{ username }} </div>
     </div>
     <div class="sidebar-content">
-      <div class="sidebar-2section">Launcher
+      <div class="sidebar-section">Launcher
         <a class="sidebar-option" id="mods">
           <i class="fa-solid fa-circle-play"></i>
           <div>Mods</div>
