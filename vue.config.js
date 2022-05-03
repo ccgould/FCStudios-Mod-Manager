@@ -9,18 +9,18 @@ module.exports = defineConfig({
         appId: 'modlauncher.fcstudioshub.com',
         "mac": {
           "target": "dmg",
-          "icon": "public/icon.icns"
+          "icon": "src/assets/icon.icns"
         },
         win: {
           "target": [
             "nsis"
           ],
-          icon: 'public/icon.png',
+          icon: 'src/assets/icon.png',
           "requestedExecutionLevel": "requireAdministrator"
         },
         "nsis": {
-          "installerIcon": "public/icon.ico",
-          "uninstallerIcon": "public/icon.ico",
+          "installerIcon": "src/assets/icon.ico",
+          "uninstallerIcon": "src/assets/icon.ico",
           "uninstallDisplayName": "FCStudios Mod Manager",
           "license": "license.txt",
           "oneClick": false,
