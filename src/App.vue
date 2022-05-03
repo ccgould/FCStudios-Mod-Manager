@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <Sidebar username="Swiftzerr"
-           user_pfp="https://data.whicdn.com/images/305354737/original.jpg"/>
+           user_pfp="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Solid_blue.svg/225px-Solid_blue.svg.png"/>
 </template>
 
 <script>
