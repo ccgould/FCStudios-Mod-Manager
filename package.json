@@ -1,6 +1,6 @@
 {
-  "name": "vue3-electron",
-  "version": "0.1.0",
+  "name": "fcstudios-mod-manager",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
