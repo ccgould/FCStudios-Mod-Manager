@@ -27,7 +27,6 @@ async function createWindow() {
   })
 
   win.setBackgroundColor('#383B40')
-  win.setOpacity(0.99)
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     await win.loadURL(process.env.WEBPACK_DEV_SERVER_URL)
