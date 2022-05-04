@@ -3,6 +3,7 @@
 import { app, protocol, BrowserWindow, screen } from 'electron'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer'
+import * as path from "path";
 const isDevelopment = process.env.NODE_ENV !== 'production'
 let width, height
 
@@ -19,9 +20,10 @@ async function createWindow() {
     minHeight: Math.round(height * 0.7),
     width: Math.round(width * 0.7),
     height: Math.round(height * 0.7),
-    icon: './assets/icon.ico',
+    icon: __dirname + '/assets/icon.ico',
     frame: false,
     webPreferences: {
+      preload: path.join(__dirname, 'main/preload.js'),
       nodeIntegration: process.env.ELECTRON_NODE_INTEGRATION,
       contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION
     }
