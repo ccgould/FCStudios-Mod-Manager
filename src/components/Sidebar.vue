@@ -8,7 +8,7 @@
       <div class="sidebar-section">Launcher
         <a class="sidebar-option" id="mods">
           <i class="fa-solid fa-circle-play"></i>
-          <div>Mods</div>
+          <div> {{ lang.get('sidebar.mods') }} </div>
         </a>
 
         <a class="sidebar-option" id="news">
@@ -49,9 +49,27 @@
 <script>
 export default {
   name: "App-Sidebar",
+  data () {
+    return {
+      config: window.storage.get(),
+      lang: window.lang
+    }
+  },
   props: {
     username: String,
     user_pfp: String
+  },
+  methods: {
+    debugMessage: function (location, message) {console.log(`%c[Sidebar.vue] %c[${location}] %c${message}`, 'color: red', 'color: crimson', 'color: lightblue')}
+  },
+  watch: {
+    config: {
+      handler(newValue, oldValue) {
+        this.debugMessage('config watch', 'config changed from ' + oldValue + ' to ' + newValue)
+        window.storage.update(JSON.stringify(newValue))
+      },
+      deep: true
+    }
   }
 }
 </script>
