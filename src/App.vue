@@ -1,11 +1,14 @@
 <template>
-  <sidebar username="Swiftzerr"
+  <sidebar username="Dev Test"
            user_pfp="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Solid_blue.svg/225px-Solid_blue.svg.png"/>
-  <div> {{ config.lang }} </div>
+  <div class="main-content">
+    <navbar></navbar>
+  </div>
 </template>
 
 <script>
 import sidebar from './components/Sidebar.vue'
+import navbar from './components/Navbar.vue'
 import './style.less'
 
 export default {
@@ -16,7 +19,8 @@ export default {
     }
   },
   components: {
-   sidebar
+    sidebar,
+    navbar
   },
   mounted() {
     this.debugMessage('main', 'mounted!')

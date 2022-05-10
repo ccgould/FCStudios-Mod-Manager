@@ -2,7 +2,7 @@
 // I will eventually make a Readme to explain this system.
 const fs = require('fs');
 const path = require('path');
-const { ipcMain, ipcRenderer } = require("electron");
+const { ipcMain } = require("electron");
 
 function debugMessage(location, message) {console.log(`%c[i18n.js] %c[${location}] %c${message}`, 'color: red', 'color: crimson', 'color: lightblue')}
 debugMessage('main', 'loaded!');
@@ -10,9 +10,9 @@ debugMessage('main', 'loaded!');
 /* @namespace */
 class i18n {
     constructor() {
-        ipcMain.on('getWord', (event, word) => {
+        ipcMain.on('getWord', (event, word, options) => {
             debugMessage('getWord', 'received data: ' + word)
-            event.returnValue = this.getWord(word);
+            event.returnValue = this.getWord(word, options);
         })
 
         ipcMain.on('getLangList', (event) => {
@@ -39,17 +39,16 @@ class i18n {
     }
 
     getWord(word, options = {}) {
-        let storage = ipcMain.
-        let lang = storage.lang;
+        let lang = options.lang || 'en_US';
+        let langPath = path.join(__static, 'i18n', lang + '.json');
         // Check if path exists
         if (!fs.existsSync(langPath)) {
-            console.error("[i18n] Language file not found: " + langPath + ". Using default language: en");
-            let temp_storage = ipcRenderer.sendSync('get-config')
-            ipcRenderer.send('set-config', temp_storage.lang = 'en');
+            console.error("[i18n] Language file not found: " + langPath + ". Using default language: en_US");
             lang = 'en_US'
+            langPath = path.join(__static, 'i18n', lang + '.json');
         }
-        const langPath = path.join(__dirname, '..', 'i18n', lang + '.json');
         const langData = JSON.parse(fs.readFileSync(langPath, 'utf8'));
+        debugMessage('getWord', 'loaded language file: ' + langPath)
         return langData[word] || word;
     }
 }

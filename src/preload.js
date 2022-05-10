@@ -36,7 +36,7 @@ contextBridge.exposeInMainWorld('storage', {
 contextBridge.exposeInMainWorld('lang', {
     get: (data) => {
         debugMessage('lang.get', data)
-        ipcRenderer.send('getWord', data)
+        return ipcRenderer.sendSync('getWord', data, {lang: ipcRenderer.sendSync('get-config').lang})
     },
     getLangs: () => {
         debugMessage('storage.getLangs', 'called')

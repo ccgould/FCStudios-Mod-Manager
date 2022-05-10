@@ -15,6 +15,7 @@ let width, height
 
 function debugMessage(location, message) {console.log(`%c[background.js] %c[${location}] %c${message}`, 'color: red', 'color: crimson', 'color: lightblue')}
 debugMessage('main', 'loaded!')
+debugMessage('static path', __static)
 
 protocol.registerSchemesAsPrivileged([
   { scheme: 'app', privileges: { secure: true, standard: true } }

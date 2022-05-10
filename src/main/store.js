@@ -8,6 +8,12 @@ class Store {
     constructor() {
         this.default = {
             "lang": "en-US",
+            "page": {
+                "name": "settings",
+                "last": {
+                    "name": "",
+                }
+            }
         }
 
         // Storage object

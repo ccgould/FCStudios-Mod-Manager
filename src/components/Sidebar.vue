@@ -6,40 +6,40 @@
     </div>
     <div class="sidebar-content">
       <div class="sidebar-section">Launcher
-        <a class="sidebar-option" id="mods">
+        <a class="sidebar-option" id="mods" v-on:click="navigateToPage('mods')">
           <i class="fa-solid fa-circle-play"></i>
           <div> {{ lang.get('sidebar.mods') }} </div>
         </a>
 
-        <a class="sidebar-option" id="news">
+        <a class="sidebar-option" id="news" v-on:click="navigateToPage('news')">
           <i class="fa-solid fa-newspaper"></i>
-          <div>News</div>
+          <div> {{ lang.get('sidebar.news') }} </div>
         </a>
 
-        <a class="sidebar-option" id="settings">
+        <a class="sidebar-option" id="settings" v-on:click="navigateToPage('settings')">
           <i class="fa-solid fa-gear"></i>
-          <div>Settings</div>
+          <div> {{ lang.get('sidebar.settings') }}</div>
         </a>
 
-        <a class="sidebar-option" id="downloads">
+        <a class="sidebar-option" id="downloads" v-on:click="navigateToPage('downloads')">
           <i class="fa-solid fa-download"></i>
-          <div>Downloads</div>
+          <div> {{ lang.get('sidebar.downloads') }} </div>
         </a>
       </div>
       <div class="sidebar-section">Community
-        <a class="sidebar-option" id="account">
+        <a class="sidebar-option" id="account" v-on:click="navigateToPage('account')">
           <i class="fa-solid fa-user"></i>
-          <div>Account</div>
+          <div> {{ lang.get('sidebar.account') }} </div>
         </a>
 
         <a class="sidebar-option" id="discord">
           <i class="fa-brands fa-discord"></i>
-          <div>Discord</div>
+          <div> {{ lang.get('sidebar.discord') }} </div>
         </a>
 
         <a class="sidebar-option" id="website">
           <i class="fa-brands fa-chrome"></i>
-          <div>Website</div>
+          <div> {{ lang.get('sidebar.website') }} </div>
         </a>
       </div>
     </div>
@@ -60,7 +60,11 @@ export default {
     user_pfp: String
   },
   methods: {
-    debugMessage: function (location, message) {console.log(`%c[Sidebar.vue] %c[${location}] %c${message}`, 'color: red', 'color: crimson', 'color: lightblue')}
+    debugMessage: function (location, message) {console.log(`%c[Sidebar.vue] %c[${location}] %c${message}`, 'color: red', 'color: crimson', 'color: lightblue')},
+
+    navigateToPage: function (new_page) {
+      this.config.page = {name: new_page, last: {name: this.config.page.name}}
+    }
   },
   watch: {
     config: {
