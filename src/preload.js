@@ -1,4 +1,4 @@
-import { contextBridge, ipcRenderer } from 'electron'
+import { contextBridge, ipcRenderer, shell } from 'electron'
 
 function debugMessage(location, message) {console.log(`%c[preload.js] %c[${location}] %c${message}`, 'color: red', 'color: crimson', 'color: lightblue')}
 
@@ -42,4 +42,11 @@ contextBridge.exposeInMainWorld('lang', {
         debugMessage('storage.getLangs', 'called')
         return ipcRenderer.sendSync('getLangList')
     }
+})
+
+contextBridge.exposeInMainWorld('functions', {
+    openLink: (data) => {
+        debugMessage('functions.openLink', data)
+        return shell.openExternal(data);
+    },
 })

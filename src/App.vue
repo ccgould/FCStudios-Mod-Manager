@@ -9,13 +9,14 @@
 <script>
 import sidebar from './components/Sidebar.vue'
 import navbar from './components/Navbar.vue'
+import  { app } from '@/main/state'
 import './style.less'
 
 export default {
   name: 'App',
   data () {
     return {
-      config: window.storage.get()
+      app
     }
   },
   components: {
@@ -39,8 +40,13 @@ export default {
   methods: {
     debugMessage: function (location, message) {console.log(`%c[App.vue] %c[${location}] %c${message}`, 'color: red', 'color: crimson', 'color: lightblue')}
   },
+  computed: {
+    configwatch () {
+      return this.app.config
+    }
+  },
   watch: {
-    config: {
+    configwatch: {
       handler(newValue, oldValue) {
         this.debugMessage('config watch', 'config changed from ' + oldValue + ' to ' + newValue)
         window.storage.update(JSON.stringify(newValue))

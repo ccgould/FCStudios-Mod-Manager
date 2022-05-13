@@ -10,5 +10,11 @@
   "sidebar.downloads": "Downloads",
   "sidebar.account": "Account",
   "sidebar.discord": "Discord",
-  "sidebar.website": "Website"
+  "sidebar.website": "Website",
+
+  "page.mods": "mods",
+  "page.news": "news",
+  "page.settings": "settings",
+  "page.downloads": "downloads",
+  "page.account": "account"
 }

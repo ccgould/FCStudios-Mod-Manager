@@ -8,12 +8,6 @@ class Store {
     constructor() {
         this.default = {
             "lang": "en-US",
-            "page": {
-                "name": "settings",
-                "last": {
-                    "name": "",
-                }
-            }
         }
 
         // Storage object
@@ -28,7 +22,7 @@ class Store {
         })
 
         ipcMain.on('set-config', (_event, store) => {
-            debugMessage('set-config', 'received data: ' + store)
+            debugMessage('set-config', 'received data: ' + JSON.stringify(store))
             Store.config.store = store
         })
     }
