@@ -5,41 +5,38 @@
       <div class="profile-username"> {{ username }} </div>
     </div>
     <div class="sidebar-content">
-      <div class="sidebar-section">Launcher
-        <a class="sidebar-option" id="mods" v-on:click="navigateToPage(lang.get('page.mods'), 'main.mods')">
-          <i class="fa-solid fa-circle-play"></i>
-          <div> {{ lang.get('sidebar.mods') }} </div>
-        </a>
-
-        <a class="sidebar-option" id="news" v-on:click="navigateToPage(lang.get('page.news'), 'main.news')">
-          <i class="fa-solid fa-newspaper"></i>
-          <div> {{ lang.get('sidebar.news') }} </div>
-        </a>
-
-        <a class="sidebar-option" id="settings" v-on:click="navigateToPage(lang.get('page.settings'), 'main.settings')">
-          <i class="fa-solid fa-gear"></i>
-          <div> {{ lang.get('sidebar.settings') }}</div>
-        </a>
-
-        <a class="sidebar-option" id="downloads" v-on:click="navigateToPage(lang.get('page.downloads'), 'main.downloads')">
-          <i class="fa-solid fa-download"></i>
-          <div> {{ lang.get('sidebar.downloads') }} </div>
+      <div class="sidebar-section">{{ lang.get('sidebar.play') }}
+        <a class="sidebar-option" v-on:click="navigateToPage(lang.get('page.subnautica'), 'mods.subnautica')">
+          <i :style="{color: (app.page_id === 'mods.game') ? 'white' : '#939395'}" class="fa-solid fa-fish-fins"></i>
+          <div :style="{color: (app.page_id === 'mods.subnautica') ? 'white' : '#939395'}"> {{ lang.get('sidebar.subnautica') }} </div>
         </a>
       </div>
-      <div class="sidebar-section">Community
-        <a class="sidebar-option" id="account" v-on:click="navigateToPage(lang.get('page.account'), 'main.account')">
-          <i class="fa-solid fa-user"></i>
-          <div> {{ lang.get('sidebar.account') }} </div>
+      <div class="sidebar-section">{{ lang.get('sidebar.community') }}
+        <a class="sidebar-option" v-on:click="navigateToPage(lang.get('page.news'), 'main.news')">
+          <i :style="{color: (app.page_id === 'main.news') ? 'white' : '#939395'}" class="fa-solid fa-newspaper"></i>
+          <div :style="{color: (app.page_id === 'main.news') ? 'white' : '#939395'}"> {{ lang.get('sidebar.news') }} </div>
         </a>
 
-        <a class="sidebar-option" id="discord" v-on:click="functions.openLink('https://discord.gg/4pyZx7N2tR')">
-          <i class="fa-brands fa-discord"></i>
-          <div> {{ lang.get('sidebar.discord') }} </div>
+        <a class="sidebar-option" v-on:click="navigateToPage(lang.get('page.account'), 'main.account')">
+          <i :style="{color: (app.page_id === 'main.account') ? 'white' : '#939395'}" class="fa-solid fa-user"></i>
+          <div :style="{color: (app.page_id === 'main.account') ? 'white' : '#939395'}"> {{ lang.get('sidebar.account') }} </div>
         </a>
 
-        <a class="sidebar-option" id="website" v-on:click="functions.openLink('https://fcstudioshub.com/')">
-          <i class="fa-brands fa-chrome"></i>
-          <div> {{ lang.get('sidebar.website') }} </div>
+        <a class="sidebar-option" v-on:click="navigateToPage(lang.get('page.about'), 'main.about')">
+          <i :style="{color: (app.page_id === 'main.about') ? 'white' : '#939395'}" class="fa-solid fa-circle-info"></i>
+          <div :style="{color: (app.page_id === 'main.about') ? 'white' : '#939395'}"> {{ lang.get('sidebar.about') }} </div>
+        </a>
+      </div>
+
+      <div class="sidebar-bottom">
+        <a class="sidebar-option" v-on:click="navigateToPage(lang.get('page.downloads'), 'main.downloads')">
+          <i :style="{color: (app.page_id === 'main.downloads') ? 'white' : '#939395'}" class="fa-solid fa-download"></i>
+          <div :style="{color: (app.page_id === 'main.downloads') ? 'white' : '#939395'}"> {{ lang.get('sidebar.downloads') }} </div>
+        </a>
+
+        <a class="sidebar-option" style="line-height: 40px; height: 40px;" v-on:click="navigateToPage(lang.get('page.settings'), 'main.settings')">
+          <i :style="{color: (app.page_id === 'main.settings') ? 'white' : '#939395'}" class="fa-solid fa-gear"></i>
+          <div :style="{color: (app.page_id === 'main.settings') ? 'white' : '#939395'}"> {{ lang.get('sidebar.settings') }}</div>
         </a>
       </div>
     </div>
@@ -64,12 +61,19 @@ export default {
   methods: {
     debugMessage: function (location, message) {console.log(`%c[Sidebar.vue] %c[${location}] %c${message}`, 'color: red', 'color: crimson', 'color: lightblue')},
     navigateToPage: function (new_page, page_id = "") {
+      if (page_id.includes('mods.')) {
+        this.app.page_id = 'main.game'
+        this.app.page = new_page
+        this.app.last_page = ''
+        this.app.game_id = page_id
+      } else {
+        this.app.page = new_page
+        this.app.page_id = page_id
+        this.app.last_page = ''
+      }
       if (page_id === "") {
         page_id = new_page
       }
-      this.app.page = new_page
-      this.app.page_id = page_id
-      this.app.last_page = ''
     }
   }
 }

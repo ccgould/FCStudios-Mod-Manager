@@ -3,12 +3,16 @@
            user_pfp="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Solid_blue.svg/225px-Solid_blue.svg.png"/>
   <div class="main-content">
     <navbar></navbar>
+    <settingsPage :visible="pageVisibility['main.settings']"></settingsPage>
+    <game-page :visible="pageVisibility['main.game']"></game-page>
   </div>
 </template>
 
 <script>
 import sidebar from './components/Sidebar.vue'
 import navbar from './components/Navbar.vue'
+import settingsPage from './pages/settings'
+import gamePage from './pages/gamepage'
 import  { app } from '@/main/state'
 import './style.less'
 
@@ -16,12 +20,18 @@ export default {
   name: 'App',
   data () {
     return {
-      app
+      app,
+      pageVisibility: {
+        'main.settings': 0,
+        'main.game': 0
+      }
     }
   },
   components: {
     sidebar,
-    navbar
+    navbar,
+    settingsPage,
+    gamePage
   },
   mounted() {
     this.debugMessage('main', 'mounted!')
@@ -41,17 +51,27 @@ export default {
     debugMessage: function (location, message) {console.log(`%c[App.vue] %c[${location}] %c${message}`, 'color: red', 'color: crimson', 'color: lightblue')}
   },
   computed: {
-    configwatch () {
+    configWatch () {
       return this.app.config
-    }
+    },
+    pageWatch() {
+      return this.app.page_id
+    },
   },
   watch: {
-    configwatch: {
+    configWatch: {
       handler(newValue, oldValue) {
         this.debugMessage('config watch', 'config changed from ' + oldValue + ' to ' + newValue)
         window.storage.update(JSON.stringify(newValue))
       },
       deep: true
+    },
+    pageWatch: {
+      handler(newValue, oldValue) {
+        this.debugMessage('page watch', 'page changed from ' + oldValue + ' to ' + newValue)
+        Object.keys(this.pageVisibility).forEach(v => this.pageVisibility[v] = 0)
+        this.pageVisibility[newValue] = 1
+      }
     }
   }
 }

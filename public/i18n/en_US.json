@@ -4,17 +4,20 @@
   "i18n.authors": "Swiftzerr",
   "app.name": "FCStudios Mod Manager",
 
-  "sidebar.mods": "Mods",
+  "sidebar.community": "Community",
+  "sidebar.play": "Play",
   "sidebar.news": "News",
   "sidebar.settings": "Settings",
   "sidebar.downloads": "Downloads",
   "sidebar.account": "Account",
-  "sidebar.discord": "Discord",
-  "sidebar.website": "Website",
+  "sidebar.subnautica": "Subnautica",
+  "sidebar.about": "About",
 
   "page.mods": "mods",
   "page.news": "news",
   "page.settings": "settings",
   "page.downloads": "downloads",
-  "page.account": "account"
+  "page.account": "account",
+  "page.about": "about",
+  "page.subnautica": "subnautica"
 }

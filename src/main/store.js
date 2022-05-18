@@ -7,7 +7,7 @@ debugMessage('main', 'loaded!')
 class Store {
     constructor() {
         this.default = {
-            "lang": "en-US",
+            "lang": "en_US",
         }
 
         // Storage object
