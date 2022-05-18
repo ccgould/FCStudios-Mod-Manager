@@ -92,7 +92,7 @@ body, html {
 .main-content {
   height: 100%;
   color: white;
-  margin: 15px 15px 15px 240px;
+  margin: 15px 10px 15px 240px;
 }
 
 .topbar {
@@ -137,6 +137,7 @@ body, html {
   padding-left: 20px;
   padding-top: 10px;
   border-radius: 25px;
+  width: calc(100vw - 270px);
 }
 
 .sidebar-bottom {
@@ -145,12 +146,15 @@ body, html {
   z-index: -1;
 }
 
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.3s ease;
+.opacity-enter-active,
+.opacity-leave-active {
+  transition: all 0.5s ease-out;
 }
 
-.v-enter-from,
-.v-leave-to {
+.opacity-leave-to, .opacity-enter-from {
   opacity: 0;
+}
+
+.page {
+  position: absolute;
 }

@@ -7,8 +7,8 @@
     <div class="sidebar-content">
       <div class="sidebar-section">{{ lang.get('sidebar.play') }}
         <a class="sidebar-option" v-on:click="navigateToPage(lang.get('page.subnautica'), 'mods.subnautica')">
-          <i :style="{color: (app.page_id === 'mods.game') ? 'white' : '#939395'}" class="fa-solid fa-fish-fins"></i>
-          <div :style="{color: (app.page_id === 'mods.subnautica') ? 'white' : '#939395'}"> {{ lang.get('sidebar.subnautica') }} </div>
+          <i :style="{color: (app.game_id === 'mods.subnautica') ? 'white' : '#939395'}" class="fa-solid fa-fish-fins"></i>
+          <div :style="{color: (app.game_id === 'mods.subnautica') ? 'white' : '#939395'}"> {{ lang.get('sidebar.subnautica') }} </div>
         </a>
       </div>
       <div class="sidebar-section">{{ lang.get('sidebar.community') }}
@@ -70,6 +70,7 @@ export default {
         this.app.page = new_page
         this.app.page_id = page_id
         this.app.last_page = ''
+        this.app.game_id = ''
       }
       if (page_id === "") {
         page_id = new_page

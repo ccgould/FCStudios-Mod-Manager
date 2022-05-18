@@ -1,13 +1,9 @@
 <template>
-  <Transition>
-    <div v-if="visible">
-      <div class="container">
-        <div class="settings-option">
-          <combobox value="Language" :list="['hi', 'hi']"></combobox>
-        </div>
+    <div>
+      <div class="settings-option">
+        <combobox value="Language" :list="['hi', 'hi']"></combobox>
       </div>
     </div>
-  </Transition>
 </template>
 
 <script>
@@ -26,8 +22,8 @@ export default {
   components: {
     combobox,
   },
-  props: {
-    visible: Number
-  }
+  // props: {
+  //   visible: Number
+  // }
 }
 </script>

@@ -3,8 +3,16 @@
            user_pfp="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Solid_blue.svg/225px-Solid_blue.svg.png"/>
   <div class="main-content">
     <navbar></navbar>
-    <settingsPage :visible="pageVisibility['main.settings']"></settingsPage>
-    <game-page :visible="pageVisibility['main.game']"></game-page>
+    <div class="container">
+      <Transition name="opacity">
+        <div class="page" v-if="pageVisibility['main.settings']">
+          <settingsPage></settingsPage>
+        </div>
+        <div class="page" v-else-if="pageVisibility['main.game']">
+          <game-page></game-page>
+        </div>
+      </Transition>
+    </div>
   </div>
 </template>
 
