@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f8Z+N2VOOwOf62jWpelQbqLYHwVrv6Jw5Mw2RA1rJK9BS6kaCrlCCB/ONiwEeHRN2C2qSnwEhnhEvv+0pQaE+A==",
+  "dgSpecHash": "0jVmgM47Efh1dWu1XB6Vnua0ugcLLhRNbPRr+4VMkOmZ1qNlwdXZShqGAB/d1ACqX55kF5XCZAuKnIpiRCNjIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SPV_s\\Documents\\Field Creators Studios\\Applications\\FCStudiosTools\\Modding Helper\\Modding Helper.csproj",
+  "projectFilePath": "C:\\Users\\SPV_s\\OneDrive\\Documents\\Field Creators Studios\\Visual Studio\\FCStudiosTools\\Modding Helper\\Modding Helper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SPV_s\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
     "C:\\Users\\SPV_s\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",

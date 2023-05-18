@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Numerics;
+
 
 namespace Modding_Helper.Interface;
 public struct FCSModItemSettings
 {
     public string Description;
-    public LargeWorldEntity.CellLevel CellLevel;
+    public CellLevel CellLevel;
     public Vector3 ConstructableSize;
     public Vector3 ConstructableCenter;
     public bool HasGlass;
@@ -41,3 +37,63 @@ public struct FCSModItemSettings
         MODNAME = modName;
     }
 }
+
+public enum CellLevel
+{
+    Near,
+    Medium,
+    Far,
+    VeryFar,
+    Batch = 10,
+    Global = 100
+}
+
+public enum TechGroup
+{
+    Resources,
+    Survival,
+    Personal,
+    Machines,
+    Constructor,
+    Workbench,
+    VehicleUpgrades,
+    MapRoomUpgrades,
+    Cyclops,
+    BasePieces,
+    ExteriorModules,
+    InteriorPieces,
+    InteriorModules,
+    Miscellaneous,
+    Uncategorized
+}
+
+public enum TechCategory
+{
+    BasicMaterials,
+    AdvancedMaterials,
+    Electronics,
+    Water,
+    CookedFood,
+    CuredFood,
+    Equipment,
+    Tools,
+    Machines,
+    Constructor,
+    Workbench,
+    VehicleUpgrades,
+    MapRoomUpgrades,
+    Cyclops,
+    CyclopsUpgrades,
+    BasePiece,
+    BaseRoom,
+    BaseWall,
+    ExteriorModule,
+    ExteriorLight,
+    ExteriorOther,
+    InteriorPiece,
+    InteriorRoom,
+    InteriorModule,
+    Misc,
+    MiscHullplates
+}
+

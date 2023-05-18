@@ -18,10 +18,10 @@ public partial class App : Application
     {
         IServiceCollection services = new ServiceCollection();
 
-        services.AddSingleton<LoginView>(provider => new LoginView
-        {
-            DataContext = provider.GetRequiredService<LoginViewModel>()
-        });
+        //services.AddSingleton<LoginView>(provider => new LoginView
+        //{
+        //    DataContext = provider.GetRequiredService<LoginViewModel>()
+        //});
 
         services.AddSingleton<MainWindow>(provider => new MainWindow
         {
@@ -42,17 +42,20 @@ public partial class App : Application
 
     protected override void OnStartup(StartupEventArgs e)
     {
-        var loginView = _serviceProvider.GetService<LoginView>();
+        var loginView = _serviceProvider.GetService<MainWindow>();
         loginView.Show();
-        loginView.IsVisibleChanged += (s, ex) =>
-        {
-            if(loginView.IsVisible == false && loginView.IsLoaded)
-            {
-                var mainView = _serviceProvider.GetService<MainWindow>();
-                mainView.Show();
-                loginView.Close();
-            }
-        };
+
+        //var loginView = _serviceProvider.GetService<LoginView>();
+        //loginView.Show();
+        //loginView.IsVisibleChanged += (s, ex) =>
+        //{
+        //    if(loginView.IsVisible == false && loginView.IsLoaded)
+        //    {
+        //        var mainView = _serviceProvider.GetService<MainWindow>();
+        //        mainView.Show();
+        //        loginView.Close();
+        //    }
+        //};
 
         base.OnStartup(e);
     }
