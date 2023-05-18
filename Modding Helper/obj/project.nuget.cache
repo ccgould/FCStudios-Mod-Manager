@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "B+jND3FvzPtar6Mc5LNVgfSzO52PEzBZMqGPCNK9dIqt8UxafFVZpHa3pmo9pEm2LAHtfkF0WhhkLKr5/VlmQA==",
+  "dgSpecHash": "f8Z+N2VOOwOf62jWpelQbqLYHwVrv6Jw5Mw2RA1rJK9BS6kaCrlCCB/ONiwEeHRN2C2qSnwEhnhEvv+0pQaE+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SPV_s\\Documents\\Creswell Creations\\App Development\\FCStudiosTools\\Modding Helper\\Modding Helper.csproj",
+  "projectFilePath": "C:\\Users\\SPV_s\\Documents\\Field Creators Studios\\Applications\\FCStudiosTools\\Modding Helper\\Modding Helper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SPV_s\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
     "C:\\Users\\SPV_s\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\SPV_s\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\SPV_s\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\SPV_s\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\SPV_s\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\SPV_s\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\SPV_s\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\SPV_s\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

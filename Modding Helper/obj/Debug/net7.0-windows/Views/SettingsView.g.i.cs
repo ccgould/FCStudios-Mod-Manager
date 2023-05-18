@@ -54,7 +54,7 @@ namespace Modding_Helper.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Modding Helper;component/views/settingsview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Modding Helper;V1.0.0.0;component/views/settingsview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\SettingsView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

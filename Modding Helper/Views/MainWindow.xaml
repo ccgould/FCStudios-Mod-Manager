@@ -72,20 +72,20 @@
                                  Tag="{StaticResource color2}"
                                  Command="{Binding Path=NavigateToModsCommand}">
                         <StackPanel Orientation="Horizontal">
-                            <fa:IconImage Icon="Gamepad" Style="{StaticResource menuaButtonIcon}"/>
-                            <TextBlock Text="Mods" Style="{StaticResource menuButtonText}"/>
+                            <fa:IconImage Icon="Folder" Style="{StaticResource menuaButtonIcon}"/>
+                            <TextBlock Text="Files Manager" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
                     </RadioButton>
 
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color3}">
                         <StackPanel Orientation="Horizontal">
-                            <fa:IconImage Icon="Truck" Style="{StaticResource menuaButtonIcon}"/>
-                            <TextBlock Text="Orders" Style="{StaticResource menuButtonText}"/>
+                            <fa:IconImage Icon="Edit" Style="{StaticResource menuaButtonIcon}"/>
+                            <TextBlock Text="Mod Settings Editor" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
                     </RadioButton>
 
-                    <RadioButton Style="{StaticResource menuButton}"
+                    <!--<RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color4}">
                         <StackPanel Orientation="Horizontal">
                             <fa:IconImage Icon="ShoppingBag" Style="{StaticResource menuaButtonIcon}"/>
@@ -115,7 +115,7 @@
                             <fa:IconImage Icon="PieChart" Style="{StaticResource menuaButtonIcon}"/>
                             <TextBlock Text="Report" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
-                    </RadioButton>
+                    </RadioButton>-->
 
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color8}"

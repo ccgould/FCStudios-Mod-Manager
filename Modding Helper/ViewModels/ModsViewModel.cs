@@ -1,26 +1,25 @@
 ﻿using Modding_Helper.Core;
-using Modding_Helper.Models;
-using System.Collections.ObjectModel;
-using System.IO;
-using System.Windows.Media;
+using Modding_Helper.Services;
 
 namespace Modding_Helper.ViewModels;
 
 internal class ModsViewModel : ViewModel
 {
-    private ObservableCollection<Mod> mods = new ObservableCollection<Mod>();
+    private ModManagerService modManagerService;
 
-    public ObservableCollection<Mod> Mods
+    public ModManagerService ModManagerService
     {
-        get => mods; 
+        get => modManagerService; 
         set
         {
-            mods = value;
+            modManagerService = value;
             OnPropertyChanged();
         }
     }
-    public ModsViewModel()
+
+    public ModsViewModel(ModManagerService service)
     {
+        ModManagerService = service;
         //var converter = new BrushConverter();
         //Mods.Add(new Mod { Number = "1", Character = "J", Name = "John Doe", Position = "Coach", Email = "john.doe@gmail.com", Phone = "415-954-1475" });
         //Mods.Add(new Mod { Number = "2", Character = "R", Name = "Reza Alavi", Position = "Administrator", Email = "reza110@hotmail.com", Phone = "254-451-7893" });
@@ -32,13 +31,5 @@ internal class ModsViewModel : ViewModel
         //Mods.Add(new Mod { Number = "8", Character = "A", Name = "Ali Pormand", Position = "Manager", Email = "alipor@yahoo.com", Phone = "968-378-4849" });
         //Mods.Add(new Mod { Number = "9", Character = "F", Name = "Frank Underwood", Position = "Manager", Email = "frank@yahoo.com", Phone = "301-584-6966" });
         //Mods.Add(new Mod { Number = "10", Character = "S", Name = "Saeed Dasman", Position = "Coach", Email = "saeed.dasi@hotmail.com", Phone = "817-320-5052" });
-    }
-
-    private void GetMods()
-    {
-        var path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Subnautica\\BepInEx\\plugins\\";
-
-        var directories = DirectoryInfo.
-
     }
 }

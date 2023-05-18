@@ -95,6 +95,7 @@ internal class MainViewModel : ViewModel
 
     private void LoadCurrentUserData()
     {
+        if (Thread.CurrentPrincipal?.Identity is null) return;
         var user = _userRepository.GetByUsername(Thread.CurrentPrincipal.Identity.Name);
         if (user is not null)
         {

@@ -34,7 +34,9 @@ public partial class App : Application
         services.AddSingleton<SettingsViewModel>();
         services.AddSingleton<HomeViewModel>();
         services.AddSingleton<Func<Type, ViewModel>>(serviceProvider => viewModelType => (ViewModel)serviceProvider.GetRequiredService(viewModelType));
-        services.AddSingleton<INavigationService, NavigationService>();
+
+        services.AddSingleton<INavigationService, NavigationService>(); 
+        services.AddSingleton<ModManagerService>();
         _serviceProvider = services.BuildServiceProvider();
     }
 

@@ -44,3 +44,49 @@ C:\Users\SPV_s\Documents\Creswell Creations\App Development\FCStudiosTools\Moddi
 C:\Users\SPV_s\Documents\Creswell Creations\App Development\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\ModsView.g.cs
 C:\Users\SPV_s\Documents\Creswell Creations\App Development\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\ModsView.baml
 C:\Users\SPV_s\Documents\Creswell Creations\App Development\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Styles\DataGridStyles.baml
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\Modding Helper.exe
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\Modding Helper.deps.json
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\Modding Helper.runtimeconfig.json
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\Modding Helper.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\Modding Helper.pdb
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\FontAwesome.Sharp.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper.csproj.AssemblyReference.cache
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Styles\Colors.baml
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Styles\DataGridStyles.baml
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\HomeView.g.cs
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\LoginView.g.cs
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\MainWindow.g.cs
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\ModsView.g.cs
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\SettingsView.g.cs
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper_MarkupCompile.cache
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper_MarkupCompile.lref
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\App.baml
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\HomeView.baml
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\LoginView.baml
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\MainWindow.baml
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\ModsView.baml
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Views\SettingsView.baml
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper.g.resources
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper.AssemblyInfoInputs.cache
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper.AssemblyInfo.cs
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper.csproj.CoreCompileInputs.cache
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper.csproj.CopyComplete
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\refint\Modding Helper.dll
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper.pdb
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\Modding Helper.genruntimeconfig.cache
+C:\Users\SPV_s\Documents\Field Creators Studios\Applications\FCStudiosTools\Modding Helper\obj\Debug\net7.0-windows\ref\Modding Helper.dll
